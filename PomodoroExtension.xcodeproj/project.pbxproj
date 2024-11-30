@@ -11,6 +11,9 @@
 		43F89CFA2CFA854F00C7ECF0 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43F89CF92CFA854F00C7ECF0 /* ContentView.swift */; };
 		43F89CFC2CFA855100C7ECF0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 43F89CFB2CFA855100C7ECF0 /* Assets.xcassets */; };
 		43F89CFF2CFA855100C7ECF0 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 43F89CFE2CFA855100C7ECF0 /* Preview Assets.xcassets */; };
+		43F89D072CFA857100C7ECF0 /* PomodoroTimer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43F89D062CFA857100C7ECF0 /* PomodoroTimer.swift */; };
+		43F89D0A2CFB4DE000C7ECF0 /* ConfettiSwiftUI in Frameworks */ = {isa = PBXBuildFile; productRef = 43F89D092CFB4DE000C7ECF0 /* ConfettiSwiftUI */; };
+		43F89D0E2CFB6B2F00C7ECF0 /* sound.wav in Resources */ = {isa = PBXBuildFile; fileRef = 43F89D0D2CFB6B2F00C7ECF0 /* sound.wav */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -20,6 +23,8 @@
 		43F89CFB2CFA855100C7ECF0 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		43F89CFE2CFA855100C7ECF0 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		43F89D002CFA855100C7ECF0 /* PomodoroExtension.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = PomodoroExtension.entitlements; sourceTree = "<group>"; };
+		43F89D062CFA857100C7ECF0 /* PomodoroTimer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PomodoroTimer.swift; sourceTree = "<group>"; };
+		43F89D0D2CFB6B2F00C7ECF0 /* sound.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = sound.wav; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -27,6 +32,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				43F89D0A2CFB4DE000C7ECF0 /* ConfettiSwiftUI in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -36,6 +42,8 @@
 		43F89CEB2CFA854F00C7ECF0 = {
 			isa = PBXGroup;
 			children = (
+				43F89D0D2CFB6B2F00C7ECF0 /* sound.wav */,
+				43F89D062CFA857100C7ECF0 /* PomodoroTimer.swift */,
 				43F89CF62CFA854F00C7ECF0 /* PomodoroExtension */,
 				43F89CF52CFA854F00C7ECF0 /* Products */,
 			);
@@ -85,6 +93,9 @@
 			dependencies = (
 			);
 			name = PomodoroExtension;
+			packageProductDependencies = (
+				43F89D092CFB4DE000C7ECF0 /* ConfettiSwiftUI */,
+			);
 			productName = PomodoroExtension;
 			productReference = 43F89CF42CFA854F00C7ECF0 /* PomodoroExtension.app */;
 			productType = "com.apple.product-type.application";
@@ -113,6 +124,9 @@
 				Base,
 			);
 			mainGroup = 43F89CEB2CFA854F00C7ECF0;
+			packageReferences = (
+				43F89D082CFB4DE000C7ECF0 /* XCRemoteSwiftPackageReference "ConfettiSwiftUI" */,
+			);
 			productRefGroup = 43F89CF52CFA854F00C7ECF0 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -128,6 +142,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				43F89CFF2CFA855100C7ECF0 /* Preview Assets.xcassets in Resources */,
+				43F89D0E2CFB6B2F00C7ECF0 /* sound.wav in Resources */,
 				43F89CFC2CFA855100C7ECF0 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -139,6 +154,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				43F89D072CFA857100C7ECF0 /* PomodoroTimer.swift in Sources */,
 				43F89CFA2CFA854F00C7ECF0 /* ContentView.swift in Sources */,
 				43F89CF82CFA854F00C7ECF0 /* PomodoroExtensionApp.swift in Sources */,
 			);
@@ -337,6 +353,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		43F89D082CFB4DE000C7ECF0 /* XCRemoteSwiftPackageReference "ConfettiSwiftUI" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/simibac/ConfettiSwiftUI";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.1.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		43F89D092CFB4DE000C7ECF0 /* ConfettiSwiftUI */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 43F89D082CFB4DE000C7ECF0 /* XCRemoteSwiftPackageReference "ConfettiSwiftUI" */;
+			productName = ConfettiSwiftUI;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 43F89CEC2CFA854F00C7ECF0 /* Project object */;
 }
