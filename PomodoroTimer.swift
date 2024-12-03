@@ -15,7 +15,7 @@ struct PomodoroTimer: View {
     @State private var confettiCounter = 0 // State to trigger confetti animation
     @State private var player: AVAudioPlayer? // Audio player instance
 
-    private let workTime =  25 * 30 // 25 minutes for work
+    private let workTime =  25 * 60 // 25 minutes for work
     private let shortBreakTime = 5 * 60 // 5 minutes for short break
     private let longBreakTime = 15 * 60 // 15 minutes for long break
     private let totalIntervals = 8 // Total intervals: 4 work + 3 short breaks + 1 long break
